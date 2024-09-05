@@ -1,0 +1,69 @@
+/**
+ * @license
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed ../fonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Shoika-Thin by Tropical Type Foundry
+ * URL: https://www.myfonts.com/fonts/tropical-type-foundry/shoika/thin/
+ *
+ * Webfont: Shoika-Light by Tropical Type Foundry
+ * URL: https://www.myfonts.com/fonts/tropical-type-foundry/shoika/light/
+ *
+ * Webfont: Shoika-Retina by Tropical Type Foundry
+ * URL: https://www.myfonts.com/fonts/tropical-type-foundry/shoika/retina/
+ *
+ * Webfont: Shoika-Regular by Tropical Type Foundry
+ * URL: https://www.myfonts.com/fonts/tropical-type-foundry/shoika/regular/
+ *
+ * Webfont: Shoika-Medium by Tropical Type Foundry
+ * URL: https://www.myfonts.com/fonts/tropical-type-foundry/shoika/medium/
+ *
+ * Webfont: Shoika-SemiBold by Tropical Type Foundry
+ * URL: https://www.myfonts.com/fonts/tropical-type-foundry/shoika/semi-bold/
+ *
+ * Webfont: Shoika-Bold by Tropical Type Foundry
+ * URL: https://www.myfonts.com/fonts/tropical-type-foundry/shoika/bold/
+ *
+ *
+ * ../fonts copyright: Copyright © 2020 by Tropical Type Foundry. All rights reserved.
+ *
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3ee859");
+
+@font-face {
+  font-family: "Shoika-Regular";
+  src: url('../fonts/ShoikaRegular/font.woff2') format('woff2'), url('../fonts/ShoikaRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Shoika-Retina";
+  src: url('../fonts/ShoikaRetina/font.woff2') format('woff2'), url('../fonts/ShoikaRetina/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Shoika-SemiBold";
+  src: url('../fonts/ShoikaSemiBold/font.woff2') format('woff2'), url('../fonts/ShoikaSemiBold/font.woff') format('woff');
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "Shoika-Light";
+  src: url('../fonts/ShoikaLight/font.woff2') format('woff2'), url('../fonts/ShoikaLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Shoika-Medium";
+  src: url('../fonts/ShoikaMedium/font.woff2') format('woff2'), url('../fonts/ShoikaMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Shoika-Thin";
+  src: url('../fonts/ShoikaThin/font.woff2') format('woff2'), url('../fonts/ShoikaThin/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Shoika-Bold";
+  src: url('../fonts/ShoikaBold/font.woff2') format('woff2'), url('../fonts/ShoikaBold/font.woff') format('woff');
+  font-weight: bold;
+}
