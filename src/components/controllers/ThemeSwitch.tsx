@@ -1,6 +1,6 @@
-import { ReactComponent as MoonIcon } from '../../assets/icons/moon.svg';
-import { ReactComponent as SunIcon } from '../../assets/icons/sun.svg';
-import { useTheme } from '../../utils/ThemeContext';
+import { ReactComponent as MoonIcon } from '@icons/moon.svg';
+import { ReactComponent as SunIcon } from '@icons/sun.svg';
+import { useTheme } from '@utils/ThemeContext';
 
 const ThemeSwitch: React.FC = () => {
   const { toggleTheme, theme } = useTheme();
