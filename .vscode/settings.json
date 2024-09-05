@@ -1,0 +1,15 @@
+{
+  "cSpell.words": [
+    "colours",
+    "craco",
+    "myfonts",
+    "Shoika",
+    "svgr",
+    "tailwindcss",
+    "Webfont",
+    "webfonts"
+  ],
+  "editor.formatOnSave": true,
+  "diffEditor.hideUnchangedRegions.contextLineCount": 2,
+  "diffEditor.hideUnchangedRegions.minimumLineCount": 2
+}

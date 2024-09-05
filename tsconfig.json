@@ -1,26 +1,40 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "module": "NodeNext",
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "preserveConstEnums": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "downlevelIteration": true,
+    "strictNullChecks": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "sourceMap": true,
+
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@config/*": ["./src/config/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@icons/*": ["./src/assets/icons/*"],
+      "@styles/*": ["./src/assets/styles/*"]
+    },
+    "types": ["node", "webpack-env"]
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "src/**/*.d.ts", "src/global.d.ts"],
+  "exclude": ["node_modules", "build"]
 }
