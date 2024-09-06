@@ -1,4 +1,3 @@
-import '@styles/index.scss';
 import { ThemeProvider } from '@utils/ThemeContext';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
