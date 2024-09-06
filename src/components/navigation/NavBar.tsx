@@ -1,16 +1,19 @@
-import { ReactComponent as MoonIcon } from '@icons/moon.svg';
-import { ReactComponent as ResetIcon } from '@icons/refresh.svg';
-import { ReactComponent as SunIcon } from '@icons/sun.svg';
-import { ReactComponent as ToggleIcon } from '@icons/toggle.svg';
+import DownloadButton from '@components/controllers/DownloadButton';
+import ResetButton from '@components/controllers/ResetButton';
+import ThemeSwitch from '@components/controllers/ThemeSwitch';
+import ToggleButton from '@components/controllers/ToggleButton';
+
 import logo from '@images/logo.png';
 import { useTheme } from '@utils/ThemeContext';
 
 interface NavBarProps {
+  toggle: () => void;
+  download: string;
   reset: () => void;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ reset }) => {
-  const { theme, toggleTheme } = useTheme();
+const NavBar: React.FC<NavBarProps> = ({ toggle, download, reset }) => {
+  const { theme } = useTheme();
 
   return (
     <header
@@ -32,29 +35,15 @@ const NavBar: React.FC<NavBarProps> = ({ reset }) => {
       {/* Navigation items (mobile menu toggle for small screens) */}
       <nav className="flex items-center space-x-4">
         {/* Hamburger Icon (Visible on Small Screens) */}
-        <button
-          className="md:hidden focus:outline-none"
-          aria-label="Toggle mobile menu"
-        >
-          <ToggleIcon />
-        </button>
+        <ToggleButton onClick={toggle} />
 
         {/* Desktop buttons (Visible on Medium Screens and Up) */}
         <div className="hidden md:flex items-center space-x-4">
-          <button
-            onClick={toggleTheme}
-            className="focus:outline-none"
-            aria-label="Toggle theme"
-          >
-            {theme === 'light' ? <MoonIcon /> : <SunIcon />}
-          </button>
-          <button
-            onClick={reset}
-            className="focus:outline-none"
-            aria-label="Reset settings"
-          >
-            <ResetIcon />
-          </button>
+          <ThemeSwitch />
+
+          <ResetButton onClick={reset} />
+
+          <DownloadButton download={download} />
         </div>
       </nav>
     </header>
