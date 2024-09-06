@@ -8,7 +8,7 @@ const ThemeSwitch: React.FC = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="px-4 py-2 rounded-md flex items-center space-x-2 hidden md:block"
+      className="focus:outline-none"
       aria-label="Toggle theme"
     >
       {theme === 'light' ? <MoonIcon /> : <SunIcon />}
